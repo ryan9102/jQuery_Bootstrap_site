@@ -1,0 +1,27 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,ol{
+    padding: 0;
+    margin:0;
+}
+
+.header-01{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index: 99999;
+    background: transparent;
+    padding:21px 40px 0 24px;
+    border-bottom:2px solid rgba(255, 255,255, 0.5);
+    transition: all ease 1s;
+}
+
+
+
+
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+    height:2000px;
+    background:deepskyblue;
+}
