@@ -45,3 +45,40 @@ $('.anim').magnificPopup({
   removeDelay: 300,
   mainClass: 'my-mfp-slide-bottom'
 })
+
+
+
+$(document).ready(function(){
+  $("#back2Top").click(function(event){
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: 0}, "slow");
+      return false;
+  });
+});
+
+
+$(function(){
+  $('a.smooth-scroll').click(function(event){
+      event.preventDefault();
+      var section = $(this).attr("href");
+      
+      $('html,body').animate({
+          scrollTop: $(section).offset().top - 64
+      }, 1250, "easeInOutExpo");
+  });
+});
+
+
+$(window).scroll(function(){
+  var height = $(window).scrollTop();
+  if(height > 100){
+      $('#back2Top').fadeIn();
+  }
+  else{
+      $('#back2Top').fadeOut();
+  }
+});
+
+
+
+new WOW().init();

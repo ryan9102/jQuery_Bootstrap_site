@@ -114,12 +114,12 @@ body {
   display: inline-block;
   color: white;
   line-height: 0.8;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
 }
 
 .navigator a.search {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 html {
@@ -887,4 +887,100 @@ a.box.text-center {
   text-decoration: none;
   padding-bottom: 6px;
   border-radius: 4px;
+}
+
+
+@media (max-width: 767px) {
+.header-01{
+  background-color:deepskyblue ;
+}
+  .logo{
+    display: none;
+  }
+  .myslides {
+      padding-top: 200px;
+  }
+
+  .myslides h2 {
+      width: fit-content;
+      font-size: 50px;
+      letter-spacing: 5px;
+      position: relative;
+      top: 0;
+      left: 20px;
+       
+  }
+  
+  .myslides h2 span {
+      font-size: 18px;
+      letter-spacing: 4px;
+  
+  }
+  
+  .myslides .p_img {
+      height: 176px;
+       
+      left: 20px;
+       
+  }
+  
+  .myslides .p_detail {
+      width: 100%;
+      position: relative;
+      top: -130px;
+      right: 0;
+      padding: 60px 50px 30px;
+  }
+  
+  .myslides .p_detail h3 {
+      font-size: 30px;
+  }
+  
+  .myslides .p_detail h3 i {
+      font-size: 17px;
+  }
+
+  .myslides .p_detail h4 {
+      font-size: 17px;
+  }
+
+  .myslides .p_detail a {
+      padding: 2px 6px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1199px) { 
+
+  .myslides {
+      padding-top: 300px;
+      padding-bottom: 120px;
+      z-index: 5;
+  }
+
+  .myslides h2 {
+      font-size: 80px;
+      letter-spacing: 10px;
+      top: 300px;
+      left: 50px;
+      
+  }
+  
+  .myslides h2 span {
+      font-size: 20px;
+      letter-spacing: 17px;;
+      padding-right: 15px;
+  }
+
+  .myslides .p_img {
+      height: 400px;
+  }
+
+  .myslides .p_detail {
+      width: 350px;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 30;
+  }
 }
