@@ -952,6 +952,9 @@ a.box.text-center {
   .myslides .p_detail a {
       padding: 2px 6px;
   }
+  .slideshow-container{
+    overflow: visible;
+  }
   
 }
 
